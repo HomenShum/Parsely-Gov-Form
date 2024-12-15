@@ -1,0 +1,6 @@
+# Virtual Environment
+parsely_venv/
+parsely_venv/*
+
+# Streamlit secrets
+.streamlit/secrets.toml
