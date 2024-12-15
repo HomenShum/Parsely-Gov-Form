@@ -106,3 +106,10 @@ streamlit run parsely_immigrant_assist.py
 Parsely stands as a beacon of hope for immigrant families, transforming the daunting task of government paperwork into an accessible, understandable, and empowering experience. By bridging linguistic and cultural gaps, we're not just processing forms – we're opening doors to new opportunities and brighter futures.
 
 For more information, success stories, and to join our community of support, visit [Parsely for Immigrants](https://github.com/parsely-for-immigrants).
+
+![Groq](https://img.shields.io/badge/Groq-000000?style=for-the-badge&logo=groq&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+`#AI-Driven` `#DocumentProcessing` `#GovernmentForms` `#CitizenServices` `#AutomatedWorkflow`
