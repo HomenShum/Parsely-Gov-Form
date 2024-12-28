@@ -1,47 +1,242 @@
-# 🌱 Parsely: Empowering Immigrant Families with AI-Driven Government Form Processing
+# 🎯 Parsely-Targeted-Research-Framework: Your AI-Powered Research and Analysis Companion
 
 ## Overview
-Parsely is a revolutionary AI-powered document processing system designed to assist immigrant families in navigating complex government forms. By combining advanced language translation, computer vision, and natural language processing, Parsely creates a bridge between diverse linguistic backgrounds and often intimidating bureaucratic processes.
+The Parsely-Targeted-Research-Framework (PTRF) is a sophisticated AI-powered research and analysis system designed to handle complex targeted research tasks across multiple domains. From performing comprehensive financial analysis to consumer research and document processing, PTRF serves as your intelligent research assistant, capable of understanding and executing both simple and complex research queries through various input methods.
 
 ## Key Features
-- **Multilingual Document Support**:
-  - Automatic translation for over 100 languages
-  - Voice-to-text input for language accessibility
-  - Culturally sensitive interface adaptations
+- **Advanced Financial Analysis**:
+  - Company macro metadata analysis (JPM analyst-level)
+  - Comprehensive underwriting assistance
+  - Market prospecting and competitive analysis
+  - Financial document processing and interpretation
 
-- **AI-Driven Assistance**:
-  - Intelligent form field recognition with multilingual mapping
-  - Context-aware explanations of complex legal terms
-  - Personalized document recommendations based on immigration status
+- **Consumer Research Assistant**:
+  - Real-time entertainment availability checks
+  - Comparative product/service analysis
+  - Deal evaluation and price comparison
+  - Local service availability tracking
 
-- **Vision-Enhanced Processing**:
-  - OCR capabilities for processing physical documents
-  - Real-time image enhancement for poor quality scans
-  - Automatic form layout analysis for diverse global formats
+- **Document Processing & Form Assistance**:
+  - Intelligent form field recognition and filling
+  - Multi-format document analysis
+  - Automated form reframing and completion
+  - Document type classification and routing
 
-- **User-Centric Interface**:
-  - Simplified, jargon-free instructions in native languages
-  - Step-by-step guided form filling with progress tracking
-  - Virtual assistant for real-time query resolution
+- **Multi-Modal Input Processing**:
+  - Voice command interpretation
+  - Text-based queries
+  - Document/image upload analysis
+  - Real-time chat interface
 
-## How Parsely Helps Immigrant Families
-1. **Language Barrier Breakdown**: 
-   Parsely translates complex government forms into the user's native language, ensuring clear understanding of requirements and reducing errors due to misinterpretation.
+- **Integration & Communication**:
+  - NTFY client for free WiFi notifications
+  - Twilio integration for phone communications
+  - Supabase database connectivity
+  - Google Drive integration for research storage
+  - Real-time phone messaging capabilities
 
-2. **Document Accessibility**:
-   Families can easily upload photos of physical documents using their smartphones. Parsely's advanced vision AI enhances and extracts information, making the process accessible even without access to scanners.
+## Use Cases
 
-3. **Guided Form Navigation**:
-   An AI chatbot, fluent in the user's language, guides families through each step of the form-filling process, explaining requirements and offering context-specific advice.
+### Financial Analysis
+- Perform comprehensive company analysis similar to investment banking standards
+- Generate detailed market research reports
+- Analyze competitive landscapes
+- Process financial documents and statements
 
-4. **Error Prevention**:
-   Intelligent field mapping and validation help prevent common mistakes, ensuring that forms are filled out correctly the first time, saving time and reducing stress.
+### Consumer Research
+- Find local movie showings and entertainment options
+- Compare product specifications and prices across platforms
+- Evaluate service offerings and deals
+- Track price histories and trends
 
-5. **Cultural Sensitivity**:
-   Parsely adapts its interface and explanations based on the user's cultural background, providing a more comfortable and relatable experience.
+### Document Processing
+- Intelligent form completion and filing
+- Document analysis and data extraction
+- Automated report generation
+- Multi-format document handling
 
-6. **Downloadable, Ready-to-Submit PDFs**:
-   Once forms are completed, Parsely generates professional-quality, filled PDFs ready for submission to government agencies.
+### Real-Time Communications
+- Instant research notifications via NTFY
+- Phone-based research queries
+- Voice command processing
+- Research result storage and retrieval
+
+### Form Processing Scenario
+#### Voice-Driven Form Completion
+1. **Form Initialization**
+   User has three options to start form processing:
+   - Reference previously uploaded form: "Fill out my saved W-9 form"
+   - Request new form creation: "Create a new employee onboarding form"
+   - Request form discovery: "Find the latest I-485 immigration form"
+
+2. **Form Acquisition**
+   System responds based on request type:
+   - **Saved Forms**: Retrieves from user's form library in Supabase
+   - **New Forms**: Generates structured form based on requirements
+   - **External Forms**: 
+     - Searches official sources for latest version
+     - Downloads and processes form structure
+     - Validates form authenticity
+
+3. **Interactive Form Filling**
+   - System initiates conversational form filling:
+     ```
+     System: "Let's fill out your W-9 form. What's your full legal name?"
+     User: "John Michael Smith"
+     System: "Thanks. Is your business a sole proprietorship or corporation?"
+     User: "Sole proprietorship"
+     System: "Got it. What's your current mailing address?"
+     ```
+   - Handles complex field dependencies
+   - Validates input against form requirements
+   - Provides field explanations when needed
+
+4. **Progress Management**
+   - Saves progress automatically after each field
+   - Allows pause/resume at any point:
+     ```
+     User: "Let's pause here, I'll complete the rest later"
+     System: "Progress saved. We've completed 60% of the form, 
+             remaining fields: SSN and signature"
+     ```
+   - Maintains form state in database
+
+5. **Completion Options**
+   - **Partial Completion**:
+     - Saves current progress
+     - Lists remaining required fields
+     - Sets reminder for completion
+   
+   - **Full Completion**:
+     - Generates filled form PDF
+     - Stores in Google Drive
+     - Sends confirmation with access link
+
+6. **Follow-up Actions**
+   - Schedules reminders for incomplete forms
+   - Notifies of approaching deadlines
+   - Suggests related forms if needed
+   - Maintains form version history
+
+## Usage Flow Examples
+
+### Complex Research Scenario
+#### On-the-Go Research Request
+1. **Voice Initiation**
+   - User speaks to NTFY app on iPhone while driving
+   - System establishes conversation thread and maintains context
+   - Research requirements are clarified through natural dialogue
+
+2. **Task Processing**
+   - System analyzes request complexity and determines research approach
+   - Selects optimal LLM models for different components:
+     - Primary LLM: Strategic planning and task breakdown
+     - Specialized LLMs: Web scraping, document analysis, data synthesis
+   
+3. **Research Execution**
+   - Performs parallel processing of research components:
+     - Web content scraping with screenshot capture
+     - Document retrieval and analysis
+     - Data compilation and structuring
+   - Saves source materials and screenshots for reference
+   
+4. **Result Storage**
+   - Stores structured data in Supabase
+   - Uploads comprehensive report to Google Drive
+   - Maintains source documentation with timestamps
+   
+5. **Review Access**
+   - User can access full research via:
+     - Database dashboard with interactive visualizations
+     - Organized Google Drive folder with all sources
+     - Chronological conversation history
+
+### Simple Query Scenario
+#### Quick Information Lookup
+1. **Voice Query**
+   - User asks: "What movies are playing tonight at the nearest theater?"
+   
+2. **Rapid Processing**
+   - System identifies as simple query
+   - Determines user location
+   - Fetches real-time movie schedules
+   
+3. **Immediate Response**
+   - Provides instant voice response with showtimes
+   - Includes theater location and booking information
+   
+4. **Background Storage**
+   - Automatically logs query and results to database
+   - Creates simple summary document in Google Drive
+   - Tags with timestamp and location data
+
+### System Architecture Flow
+```mermaid
+graph TD
+    A[Voice Input via NTFY] --> B{Complexity Analysis}
+    B -->|Complex| C[Task Breakdown]
+    B -->|Simple| D[Direct Processing]
+    
+    C --> E[Primary LLM Planning]
+    E --> F1[Web Scraping LLM]
+    E --> F2[Document Analysis LLM]
+    E --> F3[Data Synthesis LLM]
+    
+    F1 --> G[Data Collection]
+    F2 --> G
+    F3 --> G
+    
+    D --> G
+    
+    G --> H1[Supabase Storage]
+    G --> H2[Google Drive Upload]
+    
+    H1 --> I[User Access]
+    H2 --> I
+```
+
+### System Architecture Flow (Updated)
+```mermaid
+graph TD
+    A[Voice Input via NTFY] --> B{Request Type}
+    B -->|Research| C[Research Flow]
+    B -->|Form| D[Form Processing]
+    
+    D --> E{Form Source}
+    E -->|Saved| F1[Load from Library]
+    E -->|New| F2[Generate Form]
+    E -->|External| F3[Form Discovery]
+    
+    F1 --> G[Interactive Filling]
+    F2 --> G
+    F3 --> G
+    
+    G --> H{Completion Status}
+    H -->|Partial| I1[Save Progress]
+    H -->|Complete| I2[Generate PDF]
+    
+    I1 --> J[Database Storage]
+    I2 --> J
+    I2 --> K[Google Drive]
+    
+    J --> L[User Dashboard]
+    K --> L
+```
+
+## Technical Architecture
+
+### Core Components
+- `research_engine.py`: Main research orchestration system
+- `financial_analyzer.py`: Financial analysis and reporting
+- `consumer_research.py`: Product and service comparison
+- `document_processor.py`: Document handling and form filling
+- `communication_handler.py`: Notification and messaging system
+
+### Integration Points
+- Supabase for structured data storage
+- Google Drive for document management
+- NTFY for notification delivery
+- Twilio for phone communications
 
 ## Setup Guide
 
@@ -70,42 +265,21 @@ Parsely is a revolutionary AI-powered document processing system designed to ass
 streamlit run parsely_immigrant_assist.py
 ```
 
-## Core Components
-- `parsely_immigrant_assist.py`: Main application with multilingual UI
-- `vision_processor.py`: Document image enhancement and OCR engine
-- `translator.py`: Real-time translation and localization service
-- `form_filler.py`: Intelligent, context-aware form completion assistant
-- `cultural_adapter.py`: Interface and content customization based on user background
-
-## Key Systems
-1. **Multilingual Processing Pipeline**:
-   - Real-time translation of uploaded documents
-   - Cultural and linguistic adaptation of form fields
-   - Context-aware explanation generation in native languages
-
-2. **Vision-Enhanced Document Handling**:
-   - Smartphone-friendly document capture interface
-   - Automatic image correction and enhancement
-   - Intelligent extraction of data from diverse global form formats
-
-3. **Personalized Assistance System**:
-   - AI-driven chatbot with cultural sensitivity training
-   - Step-by-step guidance tailored to individual immigration journeys
-   - Proactive suggestion of relevant forms and supporting documents
-
 ## Privacy and Security
-- End-to-end encryption for all uploaded documents
-- Strict data retention policies compliant with immigration regulations
-- Anonymous processing options for sensitive cases
+- End-to-end encryption for all data transmission and storage
+- Secure API integrations with financial and third-party services
+- Configurable data retention policies
+- Optional local-only processing for sensitive data
 
 ## Continuous Improvement
-- Community feedback integration for enhanced cultural sensitivity
-- Regular updates to support changing immigration policies and forms
-- Collaborative partnerships with immigrant support organizations for real-world testing and refinement
+- Regular updates to support new research capabilities
+- Expanding integration options
+- Performance optimization for real-time processing
+- Community-driven feature development
 
-Parsely stands as a beacon of hope for immigrant families, transforming the daunting task of government paperwork into an accessible, understandable, and empowering experience. By bridging linguistic and cultural gaps, we're not just processing forms – we're opening doors to new opportunities and brighter futures.
+The Parsely-Targeted-Research-Framework stands as a powerful research companion, transforming complex analysis tasks into streamlined, automated processes. From financial analysis to consumer research and document processing, PTRF empowers users with AI-driven insights and efficient data processing capabilities.
 
-For more information, success stories, and to join our community of support, visit [Parsely for Immigrants](https://github.com/parsely-for-immigrants).
+For more information, documentation, and to join our developer community, visit [Parsely-Targeted-Research-Framework](https://github.com/parsely-research-framework).
 
 ![Groq](https://img.shields.io/badge/Groq-000000?style=for-the-badge&logo=groq&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
