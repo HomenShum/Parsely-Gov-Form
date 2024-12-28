@@ -1,4 +1,4 @@
-# Parsely: Empowering Immigrant Families with AI-Driven Government Form Processing
+# 🌱 Parsely: Empowering Immigrant Families with AI-Driven Government Form Processing
 
 ## Overview
 Parsely is a revolutionary AI-powered document processing system designed to assist immigrant families in navigating complex government forms. By combining advanced language translation, computer vision, and natural language processing, Parsely creates a bridge between diverse linguistic backgrounds and often intimidating bureaucratic processes.

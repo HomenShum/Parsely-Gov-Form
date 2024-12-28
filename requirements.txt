@@ -35,7 +35,6 @@ optimum[exporters]
 optimum[onnxruntime]
 pandas
 pdfminer
-Pillow>=10.0.0
 portalocker
 psutil
 pydantic

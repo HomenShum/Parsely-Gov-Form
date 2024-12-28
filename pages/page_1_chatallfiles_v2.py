@@ -52,12 +52,6 @@ import os
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-
-from utils_file_upload_v2 import (
-    FileUploadManager, ProcessingConfig, FileType, 
-    ProcessingStatus, ProcessingResult, DocumentInfo
-)
-
 # ===== Section: Global Configurations and Constants =====
 # Configure logging
 logging.basicConfig(
